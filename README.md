@@ -1,1 +1,1 @@
-# gradle-java
+# game-of-life
