@@ -38,6 +38,7 @@ public class PrintNextGeneration {
     }
 
     System.out.println("Next Generation");
+
     for (int i = 0; i < M; i++){
       for (int j = 0; j < N; j++){
         if (future[i][j] == 0)
