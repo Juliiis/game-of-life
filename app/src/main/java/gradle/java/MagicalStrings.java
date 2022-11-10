@@ -1,6 +1,6 @@
 package gradle.java;
 
 public class MagicalStrings {
-  String DOT = ".";
-  String STAR = "*";
+  static String DOT = ".";
+  static String STAR = "*";
 }

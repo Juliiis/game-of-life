@@ -1,6 +1,7 @@
 package gradle.java;
 
 public class PrintNextGeneration {
+  static MagicalStrings magicalStrings = new MagicalStrings();
   static void printNextGeneration(int grid[][], int M, int N) {
     int[][] future = new int[M][N];
 
@@ -40,9 +41,9 @@ public class PrintNextGeneration {
     for (int i = 0; i < M; i++){
       for (int j = 0; j < N; j++){
         if (future[i][j] == 0)
-          System.out.print(".");
+          System.out.print(magicalStrings.DOT);
         else
-          System.out.print("*");
+          System.out.print(magicalStrings.STAR);
       }
       System.out.println();
     }
