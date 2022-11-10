@@ -1,9 +1,8 @@
 package gradle.java;
 
-import static gradle.java.App.getGrid;
-
 public class OriginalGeneration {
   static PrintNextGeneration printNextGeneration = new PrintNextGeneration();
+  static Grid getGrid = new Grid();
 
   static void printOriginalGeneration() {
     int M = 10, N = 10;
