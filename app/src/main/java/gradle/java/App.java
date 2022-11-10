@@ -1,29 +1,17 @@
 package gradle.java;
 
-public class GameOfLife {
+public class App {
 
+    static Grid getGrid = new Grid();
     public static void main(String[] args) {
         int M = 10, N = 10;
-
-        // Initializing the grid.
-        int[][] grid = { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 1, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
-        };
 
         // Displaying the grid
         System.out.println("Original Generation");
 
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
-                if (grid[i][j] == 0)
+                if (getGrid.grid[i][j] == 0)
                     System.out.print(".");
                 else
                     System.out.print("*");
@@ -31,7 +19,7 @@ public class GameOfLife {
             System.out.println();
         }
         System.out.println();
-        printNextGeneration(grid, M, N);
+        printNextGeneration(getGrid.grid, M, N);
     }
 
     // Function to print next generation
