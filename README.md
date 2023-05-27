@@ -1,1 +1,1 @@
-# game-of-life-test
+# game-of-life
